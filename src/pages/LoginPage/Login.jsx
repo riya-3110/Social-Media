@@ -37,7 +37,7 @@ export const Login = () => {
                 availableData.email === values.email &&
                 availableData.password === values.password
               ) {
-                navigate("/");
+                navigate("/home");
               } else {
                 alert("Your email or password Incorrect");
               }

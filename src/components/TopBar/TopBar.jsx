@@ -12,7 +12,7 @@ export const TopBar = ({ profilePic }) => {
   return (
     <div className="topBar-container">
       <div className="topBar-left">
-        <span className="logo" onClick={() => navigate("/")}>
+        <span className="logo" onClick={() => navigate("/home")}>
           SOCIAL MEDIA
         </span>
       </div>
@@ -31,7 +31,7 @@ export const TopBar = ({ profilePic }) => {
             className={({ isActive }) =>
               isActive ? "topBarLinkActive" : "topBarLink"
             }
-            to="/"
+            to="/home"
           >
             Homepage
           </NavLink>

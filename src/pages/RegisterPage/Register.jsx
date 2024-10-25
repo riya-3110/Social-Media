@@ -45,7 +45,7 @@ export const Register = () => {
               localStorage.setItem("socialRegister", JSON.stringify(values));
               alert("You can login now :)");
               setSubmitting(false);
-              navigate("/login");
+              navigate("/");
             }}
           >
             {({ isSubmitting }) => (
@@ -113,7 +113,7 @@ export const Register = () => {
                 <button type="submit" className="signUpButton">
                   Register
                 </button>
-                <Link to="/login">Already have an account?</Link>
+                <Link to="/">Already have an account?</Link>
               </Form>
             )}
           </Formik>

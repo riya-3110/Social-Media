@@ -1,6 +1,6 @@
 import React from "react";
 import "./ForgetPass.css";
-import { json, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
@@ -23,7 +23,7 @@ export const ForgetPass = () => {
           console.log("available email ::", availableData.email);
           if (availableData.email === values.email) {
             alert("Link send to your given email");
-            navigate("/login");
+            navigate("/");
           } else {
             alert("Your email is not registered");
           }
@@ -39,7 +39,7 @@ export const ForgetPass = () => {
               placeholder="Enter Your Email"
             />
             <ErrorMessage name="email" component="div" className="errorMsg" />
-            <Link to="/login">Go to Login</Link>
+            <Link to="/">Go to Login</Link>
             <button className="submitBtn" type="submit">
               Submit
             </button>

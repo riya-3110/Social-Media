@@ -71,7 +71,7 @@ export const Sidebar = () => {
             <NavLink className="sidebarListItemText">Courses</NavLink>
           </li>
         </ul>
-        <button className="sidebarButton" onClick={() => navigate("/login")}>
+        <button className="sidebarButton" onClick={() => navigate("/")}>
           Log Out
         </button>
         <hr className="sidebarHr" />
